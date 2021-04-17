@@ -1,6 +1,6 @@
 # Website Problem Files Report
 Uses Google Lighthouse PageSpeed API to build an XLSX report of issue files found on the submitted URL.<br />
-The file includes 29 tabs that focus on different categories that contribute to page speed.<br />
+The file includes 30 tabs that focus on different categories that contribute to page speed.<br />
 Categories include:<br />
 * Unused javaScript
 * Unminified javaScript
