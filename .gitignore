@@ -1,0 +1,13 @@
+# environmental vars
+.env
+
+# node mods & package lock
+node_modules
+/node_modules
+./node_modules
+package-lock.json
+/package-lock.json
+./package-lock.json
+
+#reports folder
+reports
