@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const morgan = require('morgan');
+const verifyUrlParam = require('./middleware.js');
 
 //routes
 const reportRoute = require('./routes/report-route.js');
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
+app.use(verifyUrlParam);
 // routes
 app.use('/api/reports', reportRoute);
 

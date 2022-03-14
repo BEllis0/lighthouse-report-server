@@ -24,6 +24,9 @@ module.exports = {
     all_metrics: {
         page: async (req, res) => {
             console.log('url requested: ', req.query.url);
+            // if url is not found, resolve
+            if(!req.query.url) return res.status(400).json({message:"url query parameter not found."});
+            
             try {
                 let reportData;
 
